@@ -10,15 +10,24 @@ public class MultiIfDemo {
     System.out.println("점수를 입력하세요 (1~100) : ");
     int score = in.nextInt();
     String grade = "";
-    if (score >= 90 ) {
-      grade = "A";
+    if (score > 100) {
+      System.out.println("100이하의 정수를 입력하세요");
     }
-    if (score >= 80  ) {
+    else if (score >= 90 ) {
+      if (score >= 95){
+        grade = "A+";
+      }
+      else {
+        grade = "A0";
+      }
+    }
+    else if (score >= 80  ) {
       grade = "B";
     }
-    if (score >= 70 ) {
+    else if (score >= 70 ) {
       grade = "C";
-    } else {
+    }
+    else  {
       grade = "D";
     }
     System.out.printf("당신의 점수는 %d 이고, 학점은 %s 입니다.", score, grade);
