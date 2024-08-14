@@ -2,22 +2,17 @@ package basic;
 
 public class MethodDemo2 {
   public static void main(String[] args) {
-    oddOrEven(2); // 짝수
-    oddOrEven(5); // 홀수
-    oddOrEven(10); // 짝수
+    // 매개변수는 있고, 반환값은 없는 메소드로 작성하세요.
+    oddOrEven(2); // 2는 짝수입니다
+    oddOrEven(5); // 5는 홀수입니다
+    oddOrEven(10); // 10은 짝수입니다
 //    int num = 2;
 //    String result = "";
-//    if(num % 2 == 0) {
-//      result = "짝수";
-//    }else {
-//      result = "홀수";
-//    }
 //    result = (num % 2 == 0) ? "짝수" : "홀수" ;
-//    System.out.printf("%d 은 %s 입니다.", num, result);
-
-
-//    int num = 5;
-//    String result = "";
+//    System.out.printf("%d 은 %s 입니다.\n", num, result);
+//
+//    num = 5;
+//    result = "";
 //    result = (num % 2 == 0) ? "짝수" : "홀수" ;
 //    System.out.printf("%d 은 %s 입니다.\n", num, result);
 //
@@ -25,11 +20,11 @@ public class MethodDemo2 {
 //    result = "";
 //    result = (num % 2 == 0) ? "짝수" : "홀수" ;
 //    System.out.printf("%d 은 %s 입니다.\n", num, result);
-//  }
   }
-   public static void oddOrEven(int num){
-      String result = "";
-      result = (num % 2 == 0) ? "짝수" : "홀수";
-      System.out.printf("%d은 %s 입니다.\n",num,result);
+
+  public static void oddOrEven(int num) {
+    String result = "";
+    result = (num % 2 == 0) ? "짝수" : "홀수" ;
+    System.out.printf("%d 은 %s 입니다.\n", num, result);
    }
 }
