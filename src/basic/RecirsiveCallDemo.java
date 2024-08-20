@@ -15,4 +15,5 @@ public class RecirsiveCallDemo {
     int number = 5; // 예시로 5의 팩토리얼을 계산
     int result = factorial(number);
     System.out.println(number + "! = " + result);
+  }
 }
