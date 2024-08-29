@@ -1,4 +1,4 @@
-package exercise;
+package exercise_ch06;
 
 public class Ex4 {
   public static void main(String[] args) {
@@ -7,16 +7,20 @@ public class Ex4 {
     p.print();
   }
 }
-class Parent {
-  String name = "영조";
 
+class Parent {
+  //필드
+  String name = "영조";
+  //메서드
   void print() {
-    System.out.println("나는 " + name + "이다.");
+    System.out.println("나는 "+ name + "이다.");
   }
 }
 
 class Child extends Parent {
+  //필드
   String name = "사도세자";
+  //메서드
 
   @Override
   void print() {

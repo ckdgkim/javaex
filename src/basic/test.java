@@ -1,36 +1,30 @@
 package basic;
 
-import javax.swing.*;
-import java.util.Scanner;
+class Animal {
+  void sound() {
+    System.out.println("Animal makes a sound");
+  }
+}
+
+class Dog extends Animal {
+  void sound() {
+    System.out.println("Dog barks");
+  }
+
+  void fetch() {
+    System.out.println("Dog fetches the ball");
+  }
+}
 
 public class test {
   public static void main(String[] args) {
-    // 점수를 입력받아서 해당 점수의 Grade 를 매기는 프로그램
-    // 10 ==> "A", 9 ==> "B" , 8 ==> "C", 0 ~ 7 ==> "D"
-    Scanner in = new Scanner(System.in);
-    while(true) {
-      // 여기서부터
-      System.out.println("점수를 입력해주세요 ( 1~10 ) ");
-      int score = in.nextInt();
+    Animal animal = new Dog(); // 업캐스팅: Dog 객체가 Animal 타입으로 변환
+    animal.sound(); // "Dog barks" 출력 (오버라이딩된 메서드 호출)
 
-      if(score < 0) break;
-
-      String grade = "";
-      switch(score) {
-        case 10 :
-          grade = "A";
-          System.out.println(grade);
-          break;
-        case 9 :
-          grade = "B";
-          System.out.println(grade);
-          break;
-        default :
-          grade = "C";
-          System.out.println(grade);
-      }
-      // 여기까지를 계속 반복한다.
+    // 다운캐스팅 시도
+    if (animal instanceof Dog) {
+      Dog dog = (Dog) animal; // 다운캐스팅: Animal 타입을 Dog 타입으로 변환
+      dog.fetch(); // "Dog fetches the ball" 출력 (Dog 클래스의 메서드 호출)
     }
   }
-
-  }
+}

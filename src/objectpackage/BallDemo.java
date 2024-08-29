@@ -10,31 +10,27 @@ public class BallDemo {
 
 class Ball{
   // 필드
-  private int radius = 2;
+  private int radius = 1;
   // 컴파일러가 자동 생성해주는 기본 생성자
-  // 생성자
-  // 메서드
-
+  // 메소드
   public int getRadius() {
     return radius;
   }
 
   public void setRadius(int radius) {
-    if (radius <= 0) {
-      System.out.println("원의 반지름은 0보다 커야 합니다.");
+    if(radius <= 0){
+      System.out.println("공의 반지름은 0보다 커야 합니다.");
     } else {
       this.radius = radius;
     }
   }
-
   public double getVolume(){
-    double PI = Math.PI;
     //final double PI = 3.14;
-    double volume = 4/3 * PI * radius * radius * radius;
+    double volume = (4/(double)3) * Math.PI * radius * radius * radius;
     return volume;
   }
-}
 
+}
 class Cylinder {
 
 }

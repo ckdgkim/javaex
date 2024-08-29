@@ -1,7 +1,6 @@
 package objectpackage;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class DynamicArrayDemo {
   public static void main(String[] args) {
@@ -13,7 +12,9 @@ public class DynamicArrayDemo {
     System.out.println(numbers.size());
 
     ArrayList<Circle> circles = new ArrayList<>();
+    System.out.println(circles.size());
     circles.add(new Circle(1));
+    System.out.println(circles.size());
     circles.add(new Circle(2));
     System.out.println(circles);
     System.out.println(circles.size());
@@ -25,5 +26,6 @@ public class DynamicArrayDemo {
     nums.add(40);
     System.out.println(nums.size());
     System.out.println(nums);
+
   }
 }

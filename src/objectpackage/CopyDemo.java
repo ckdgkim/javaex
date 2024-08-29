@@ -14,7 +14,7 @@ public class CopyDemo {
 
   }
 
-  public static void copyByValue(int val) {
+  public static void copyByValue(int val) { // call by Value:read-only
 //    int copyTen = val;
 //
 //    System.out.println("ten : " + val);
@@ -26,7 +26,7 @@ public class CopyDemo {
 
   }
 
-  public static void copyByReference(Circle c1) {
+  public static void copyByReference(Circle c1) {//call by reference:read-write
 //    Circle c2 = new Circle(); // 0x200
 
 //    System.out.println("인스턴스 생성 후 ");
@@ -42,6 +42,5 @@ public class CopyDemo {
     System.out.println("c1의 반지름을 메소드 안에서 변경 후");
     System.out.println("c1의 반지름 : " + c1.getRadius());
     //System.out.println("c2의 반지름 : " + c2.getRadius());
-
   }
 }

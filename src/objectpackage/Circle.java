@@ -1,16 +1,11 @@
 package objectpackage;
 
-import java.sql.SQLOutput;
-
 class Circle {
   // 필드 - 캡슐화 전
   static final double PI = Math.PI;
   private int radius = 1;
-  // 생성자 (기본생성자,~~~)
-//  public Circle(){
-//
-//  }
-  public Circle (int radius) {
+  // 생성자 (기본생성자~~~)
+  public Circle(int radius) {
     if(radius <= 0){
       System.out.println("원의 반지름은 0보다 커야 합니다.");
     } else {
@@ -31,7 +26,6 @@ class Circle {
    * 매개변수 X 리턴값 O (double)
    */
   public double getArea() {
-  //  final double PI = 3.14;
     double area = PI * radius * radius;
     return area;
   }
@@ -47,4 +41,16 @@ class Circle {
       this.radius = radius;
     }
   }
+
+  @Override
+  public String toString(){
+    return "원의 반지름이 " + radius + "이고, 넓이가 " + getArea() + "인 원입니다.";
+  }
+
+//  @Override
+//  public String toString() {
+//    return "Circle{" +
+//        "radius=" + radius +
+//        '}';
+//  }
 }
