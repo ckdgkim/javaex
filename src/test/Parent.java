@@ -1,6 +1,7 @@
 package test;
 
 public class Parent {
+
   public String field1;
 
   public void method1() {
