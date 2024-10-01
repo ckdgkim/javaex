@@ -5,13 +5,13 @@ public class ShortCompareDemo {
     String s1 = new String("Hello");
     String s2 = new String("Hello");
 
-    s1 = s2;
+    s2 = s1 ;
 
     if (s1 != null && s1.equals(s2)) {
       System.out.println("문자열의 내용이 동일합니다.");
     }
 
-    System.out.println("문자열의 내용이 같은가?" + s1.equals(s2));
-    System.out.println("두 문자열이 똑같은가 ?" + (s1 == s2));
+    System.out.println("두 문자열이 똑같은가 ? " + (s1 == s2));
+
   }
 }

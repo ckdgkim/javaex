@@ -18,7 +18,5 @@ public class InetAddressDemo {
     System.out.println(addr1.getHostAddress());
     System.out.println(addr2.getHostAddress());
 
-    System.out.println(addr1);
-
   }
 }

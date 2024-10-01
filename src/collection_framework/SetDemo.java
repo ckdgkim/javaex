@@ -10,7 +10,7 @@ public class SetDemo {
     HashSet<String> hs = new HashSet<>(set);
     hs.add("수박");
     Iterator<String> iterator = hs.iterator();
-    while (iterator.hasNext()){
+    while(iterator.hasNext()){
       System.out.println(iterator.next());
     }
     boolean add = hs.add("수박");

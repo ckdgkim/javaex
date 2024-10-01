@@ -9,13 +9,9 @@ public class InterfaceDemo2 {
 }
 
 class Class2 implements MyInterface {
+
   @Override
   public void sayHello() {
     System.out.println("Hello");
-  }
-
-  @Override
-  public void sayGoodBye() {
-    System.out.println("GoodBye");
   }
 }

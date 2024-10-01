@@ -7,8 +7,7 @@ public class calendarDemo {
     Calendar c = Calendar.getInstance();
     System.out.println(c);
     System.out.println(c.get(Calendar.YEAR));
-    System.out.println(c.get(2)+1);
+    System.out.println(c.get(2) + 1);
     System.out.println(c.get(Calendar.DAY_OF_MONTH));
   }
 }
-

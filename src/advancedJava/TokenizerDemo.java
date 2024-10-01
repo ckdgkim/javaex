@@ -9,13 +9,6 @@ public class TokenizerDemo {
     StringTokenizer st = new StringTokenizer(s, " ,");
     while(st.hasMoreElements()) {
       System.out.println(st.nextElement());
-      System.out.println(st.nextElement());
-      System.out.println(st.nextElement());
-      System.out.println(st.nextElement());
-      System.out.println(st.nextElement());
-      System.out.println(st.nextElement());
-      System.out.println(st.nextElement());
-      System.out.println(st.nextElement());
     }
   }
 }

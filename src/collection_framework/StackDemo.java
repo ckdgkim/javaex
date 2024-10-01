@@ -9,17 +9,18 @@ public class StackDemo {
     Stack<String> st = new Stack<>();
     System.out.println(list.isEmpty());
     System.out.println(st.empty());
-    st.push("a");//addLast와 같음
+    st.push("a"); // addFirst
+    st.push("b"); // addFirst
+    st.push("c"); // addFirst
+    st.push("d");// addFirst
     System.out.println(st);
-    st.push("b");//addLast
-    st.push("c");//addLast
-    System.out.println(st);
-    System.out.println(st.peek());
+    System.out.println(st.peek()); // getFirst
+    System.out.println(st.search("a")+ "번째에서 찾음");
     System.out.println(st.search("b") + "번째에서 찾음");
-//    st.peek();//getLast와 같음
-//    st.pop("");//removeLast와 같음
+    System.out.println(st.search("c") + "번째에서 찾음");
+    System.out.println(st.search("d") + "번째에서 찾음");
     while(!st.empty()) {
-      st.pop();
+      st.pop(); // removeFirst
       System.out.println(st);
     }
   }

@@ -7,11 +7,12 @@ public class UncheckedDemo1 {
     String s = "time is money";
     StringTokenizer st = new StringTokenizer(s);
 
-    while(st.hasMoreElements())
-    System.out.println(st.nextElement());
-    System.out.println(st.nextElement());
-    System.out.println(st.nextElement());
+    while(st.hasMoreElements()) {
+      System.out.println(st.nextElement());
+    }
+
     st = new StringTokenizer(s);
     System.out.println(st.nextElement());
+
   }
 }

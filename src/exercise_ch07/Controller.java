@@ -1,49 +1,40 @@
 package exercise_ch07;
 
-abstract class Controller{
-  abstract void show();
-  abstract String getName();
-}
-
-class TV2 extends Controller{
+public abstract class Controller {
+  // 필드
   boolean power;
-
-  public TV2(boolean power){
-    this.power = power;
-  }
-  @Override
+  // 생성자 X
+  // 메서드
   void show() {
-    if (power){
-    System.out.println("TV가 켜졌습니다..");
-  } else {
-      System.out.println("TV가 꺼졌습니다.");
+    if(power){
+      System.out.println(getName() + "가 켜졌습니다.");
+    } else {
+      System.out.println(getName() + "가 꺼졌습니다.");
     }
   }
+  abstract String getName() ;
+}
 
-    @Override
+class TV extends Controller {
+  //생성자
+  public TV(boolean power) {
+    super.power = power;
+  }
+  //메서드
+  @Override
   String getName() {
-    return "TV2";
+    return "TV";
   }
 }
 
 class Radio extends Controller {
-  boolean power;
-
+  //생성자
   public Radio(boolean power) {
-    this.power = power;
+    super.power = power;
   }
-
-  @Override
-  void show() {
-    if (power) {
-      System.out.println("Radio가 켜졌습니다.");
-    } else {
-      System.out.println("Radio가 꺼졌습니다.");
-    }
-  }
+  //메서드
   @Override
   String getName() {
     return "Radio";
   }
 }
-

@@ -32,4 +32,3 @@ public class WithoutArrayDemo {
     System.out.println(grade4);
   }
 }
-

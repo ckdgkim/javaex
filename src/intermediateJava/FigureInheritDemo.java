@@ -29,14 +29,18 @@ class Triangle extends Figure {
     this.width = width;
   }
 
-//  @Override
-//  public double getArea() {
-//    return super.getArea();
-//  }
-
   @Override
   public double getArea() {
     return (width * height) / (double) 2;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if(obj instanceof Triangle) {
+      Triangle t = (Triangle) obj;
+      return getArea() == t.getArea();
+    }
+    return false;
   }
 }
 

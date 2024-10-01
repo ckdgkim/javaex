@@ -19,8 +19,7 @@ public class ListDemo {
     l.add(40);
     System.out.println(l);
     Integer set = l.set(1, 20);
+    System.out.println(set +" 이 다른 값으로 변경되었습니다.");
     System.out.println(l);
-    System.out.println(set + "이 다른 값으로 변경되었습니다.");
-    System.out.println();
   }
 }

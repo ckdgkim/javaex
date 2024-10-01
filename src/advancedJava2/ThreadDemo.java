@@ -6,13 +6,12 @@ public class ThreadDemo {
     thread.start();
     //thread.run();
     long before = System.currentTimeMillis();
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 10; i++) {
       System.out.println("메인입니다.");
       Thread.sleep(500);
     }
     long after1 = System.currentTimeMillis();
     System.out.println(after1 - before);
-
 
     long after = System.currentTimeMillis();
     System.out.println(after - after1);
@@ -29,7 +28,7 @@ public class ThreadDemo {
 class MyTask implements Runnable {
   @Override
   public void run() {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 10; i++) {
       System.out.println("안녕!");
       try {
         Thread.sleep(500);

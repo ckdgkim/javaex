@@ -9,6 +9,8 @@ public class RandomDemo {
       System.out.println(r.nextInt(100));
     }
     r.setSeed(340030L);
-    System.out.println(r.nextInt(100));
+    for (int i = 0; i < 100; i++) {
+      System.out.println(r.nextInt(100));
+    }
   }
 }

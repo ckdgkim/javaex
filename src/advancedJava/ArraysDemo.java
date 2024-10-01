@@ -1,12 +1,11 @@
 package advancedJava;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class ArraysDemo {
   public static void main(String[] args) {
-    Integer[] intArray = {2,4,6,8,10};//new Integer[5];
-    String[] strArray = {"사과", "도넛", "바나나"};
+    Integer[] intArray = {2,4,6,8,10}; //new Integer[5];
+    String[] strArray = new String[3]; //{"사과", "도넛", "바나나"};
     int[] iArray = new int[5];
 
     //System.out.println(intArray);

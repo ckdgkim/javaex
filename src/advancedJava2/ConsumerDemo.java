@@ -6,27 +6,29 @@ import java.util.function.ObjIntConsumer;
 public class ConsumerDemo {
   public static void main(String[] args) {
     Consumer<String> printX = System.out::println;
-//        s -> System.out.println(s); {
+//  1.      new Consumer<String>() {
 //      @Override
 //      public void accept(String s) {
 //        System.out.println(s);
 //      }
 //    };
-//    printX.accept("t");
+    //2. s -> System.out.println(s);
     printX.accept("hello world");
-    ObjIntConsumer<String> lengthCheck = (s, value) ->{
-    for (int i = 0; i < value; i++) {
-          System.out.println(s);
-        }
+
+    ObjIntConsumer<String> printITimes = (s, x) -> {
+      for (int i = 0; i < x ; i++) {
+        System.out.println(s);
+      };
     };
+
 //        new ObjIntConsumer<String>() {
 //      @Override
 //      public void accept(String s, int value) {
-//        for (int i = 0; i < value; i++) {
+//        for (int i = 0; i < value ; i++) {
 //          System.out.println(s);
 //        }
 //      }
 //    };
-    lengthCheck.accept("test", 5);
+    printITimes.accept("hello",3);
   }
 }

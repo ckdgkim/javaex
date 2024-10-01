@@ -9,14 +9,16 @@ public class Ex3_3 {
         new Book(50000),
         new Book(20000),
     };
+
     System.out.println("정렬 전");
     for (Book book : books) {
       System.out.println(book);
     }
     System.out.println(Arrays.toString(books));
+
     Arrays.sort(books);
     System.out.println("정렬 후");
-    for (Book book : books){
+    for (Book book : books) {
       System.out.println(book);
     }
   }
@@ -38,9 +40,9 @@ class Book implements Comparable{
 
   @Override
   public int compareTo(Object o) {
-    if (o instanceof Book){
+    if(o instanceof Book){
       Book b = (Book) o;
-      return this.price = b.price;
+      return this.price - b.price;
     }
     return -999999999;
   }

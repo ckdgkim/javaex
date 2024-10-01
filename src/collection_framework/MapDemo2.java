@@ -2,6 +2,7 @@ package collection_framework;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class MapDemo2 {
   public static void main(String[] args) {
@@ -11,25 +12,32 @@ public class MapDemo2 {
     fruits.put(f1,5);
     fruits.put(f2,3);
     fruits.put(f1,10);
-//    fruits.put(new Fruit("사과"),5);
-//    fruits.put(new Fruit("딸기"),3);
-//    fruits.put(new Fruit("사과"),10);
     System.out.println(fruits.size());
     System.out.println(fruits.get(f2));
   }
 }
 
 class Fruit {
-  String name;
+  String name ;
 
   public Fruit(String name) {
     this.name = name;
   }
 
   @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof Fruit fruit)) return false;
+    return Objects.equals(name, fruit.name);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hashCode(name);
+  }
+
+  @Override
   public String toString() {
-    return "Fruit{" +
-        "name='" + name + '\'' +
-        '}';
+    return name ;
   }
 }

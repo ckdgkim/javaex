@@ -8,14 +8,12 @@ public class Car {
   private boolean gasoline;
   private int age;
   private int mileage;
-
   public Car(String model, boolean gasoline, int age, int mileage) {
     this.model = model;
     this.gasoline = gasoline;
     this.age = age;
     this.mileage = mileage;
   }
-
   public String getModel() {
     return model;
   }

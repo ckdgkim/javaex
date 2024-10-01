@@ -13,11 +13,11 @@ public class QueueDemo {
     q.offer("사과");
     System.out.println(q.peek());
     q.offer("수박");
-    while(!q.isEmpty()){
-      System.out.println("맨 처음에 있는 element" +q.peek());
-      System.out.println("제거된 element"+q.poll());
+    System.out.println(q.peek());
 
+    while(!q.isEmpty()) {
+      System.out.println("맨 처음에 있는 element " + q.peek());
+      System.out.println("제거된 element " + q.poll());
     }
-    q.peek();
   }
 }

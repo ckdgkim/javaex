@@ -62,4 +62,3 @@ public class Person {
         nat, address, name, age);
   }
 }
-

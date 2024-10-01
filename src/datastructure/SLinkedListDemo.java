@@ -31,4 +31,3 @@ public class SLinkedListDemo {
     System.out.println("삭제 후 " + sll.size() + "개 남음");
   }
 }
-

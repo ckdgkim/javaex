@@ -28,7 +28,7 @@ public class EchoCllient
 
     System.out.print("보낼 메시지가 있나요? ");
     while ((msg = in.nextLine()) != null) {
-      if (msg.contains("끝"))
+      if (msg.contains("end"))
         break;
       out.println(msg);
       System.out.print("보낼 메시지가 더 있나요? ");

@@ -1,10 +1,9 @@
 package advancedJava;
 
 import java.io.IOException;
-import java.sql.SQLOutput;
 
-public class ExceptionhandlingDemo {
-  public static void main(String[] args) throws IllegalArgumentException{
+public class ExceptionHandlingDemo {
+  public static void main(String[] args) throws IllegalArgumentException {
     try {
       method1();
     } catch (IOException e) {
@@ -13,7 +12,8 @@ public class ExceptionhandlingDemo {
       System.out.println("프로그램 종료");
     }
   }
-  public static void method1() throws IllegalArgumentException, IOException {
+
+  public static void method1() throws IllegalArgumentException, IOException{
     //throw new IllegalArgumentException();
     //throw new IOException();
   }

@@ -1,6 +1,6 @@
 package interface_package;
 
-public interface InterfaceDemo6 {
+public class InstanceDemo6 {
   public static void main(String[] args) {
     Movable m = new Vehicle();
     Vehicle v = new Car();

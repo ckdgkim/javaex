@@ -1,6 +1,6 @@
 package interface_package;
 
-public interface InterfaceDemo3 {
+public class InterfaceDemo3 {
   public static void main(String[] args) {
     TV tv = new TV();
     tv.turnOn();
@@ -11,7 +11,7 @@ public interface InterfaceDemo3 {
     Computer computer = new Computer();
     computer.turnOn(); // 컴퓨터를 켠다.
     computer.turnOff(); // 컴퓨터를 끈다.
-    Controllable.reset(); // 장비를 공장초기화 한다.
+    Controllable.reset(); // 장비를 공장초기화한다.
     computer.repair(); // 컴퓨터를 수리한다.
 
     Notebook notebook = new Notebook();

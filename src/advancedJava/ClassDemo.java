@@ -10,7 +10,6 @@ public class ClassDemo {
     System.out.println(aClass.getName());
     System.out.println(aClass.getSimpleName());
     System.out.println(aClass.getTypeName());
-    System.out.println(aClass.getPackage());
-
+    System.out.println(aClass.getPackage().getName());
   }
 }

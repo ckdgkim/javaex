@@ -1,18 +1,17 @@
 package exercise_ch07;
 
-public class Line implements Comparable {
-  int length;
-
-  public Line(int length) {
+public class Line implements Comparable{
+  int length ;
+  public Line(int length){
     this.length = length;
   }
 
   @Override
   public int compareTo(Object o) {
-    if (o instanceof Line) {
-      Line line = (Line) o;
+    if(o instanceof Line) {
+      Line line = (Line)o;
       int result;
-      if (this.length < line.length) result = -1;
+      if(this.length < line.length) result = -1;
       else if (this.length > line.length) result = 1;
       else result = 0;
       return result;
@@ -22,8 +21,8 @@ public class Line implements Comparable {
 
   @Override
   public String toString() {
-    return "Line " +
+    return "Line[" +
         "length=" + length +
-        '}';
+        ']';
   }
 }

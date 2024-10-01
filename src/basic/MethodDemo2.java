@@ -26,5 +26,5 @@ public class MethodDemo2 {
     String result = "";
     result = (num % 2 == 0) ? "짝수" : "홀수" ;
     System.out.printf("%d 은 %s 입니다.\n", num, result);
-   }
+  }
 }

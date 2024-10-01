@@ -24,8 +24,6 @@ public class SLinkedList<E> {
       getNode(size - 1).next = newNode;
     }
     tail = newNode;
-    System.out.println(tail.e);
-    System.out.println(tail.next);
     size++;
   }
 

@@ -1,6 +1,6 @@
 package interface_package;
 
-public class TV implements Controllable{
+public class TV implements Controllable {
   @Override
   public void turnOn() {
     System.out.println("TV를 켠다.");

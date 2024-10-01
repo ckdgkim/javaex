@@ -5,6 +5,7 @@ public class TypeCastingDemo {
     Vehicle v = new Car(); // 자동 형변환 , upcasting
     System.out.println(v.name);
     v.whoami();
+    Vehicle.move();
     v.move();
 
     Car c = new Car();
@@ -23,25 +24,20 @@ public class TypeCastingDemo {
 
 class Vehicle {
   String name = "탈 것";
-
-  void whoami(){
+  void whoami() {
     System.out.println("나는 탈 것이다.");
   }
-
-  static void move(){
+  static void move() {
     System.out.println("이동하다.");
-
   }
 }
 
 class Car extends Vehicle {
   String name = "자동차";
-
   @Override
   void whoami() {
     System.out.println("나는 자동차이다.");
   }
-
   static void move() {
     System.out.println("달리다.");
   }
@@ -61,7 +57,6 @@ class Sportscar extends Vehicle {
   }
 
   static void move(){
-    System.out.println("쌩 달린다.");
+    System.out.println("쌩 달리다.");
   }
 }
-
